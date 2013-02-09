@@ -18,6 +18,7 @@
 		DDA47F8416C6DB8C007C80F5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDA47F8316C6DB8C007C80F5 /* Default-568h@2x.png */; };
 		DDA47F8716C6DB8C007C80F5 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDA47F8516C6DB8C007C80F5 /* MainStoryboard.storyboard */; };
 		DDA47F8A16C6DB8C007C80F5 /* TBDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA47F8916C6DB8C007C80F5 /* TBDViewController.m */; };
+		DDA47F9216C6EBD8007C80F5 /* PopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA47F9116C6EBD8007C80F5 /* PopoverViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		DDA47F8616C6DB8C007C80F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		DDA47F8816C6DB8C007C80F5 /* TBDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBDViewController.h; sourceTree = "<group>"; };
 		DDA47F8916C6DB8C007C80F5 /* TBDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBDViewController.m; sourceTree = "<group>"; };
+		DDA47F9016C6EBD8007C80F5 /* PopoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverViewController.h; sourceTree = "<group>"; };
+		DDA47F9116C6EBD8007C80F5 /* PopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				DDA47F7C16C6DB8C007C80F5 /* TBDAppDelegate.h */,
 				DDA47F7D16C6DB8C007C80F5 /* TBDAppDelegate.m */,
 				DDA47F8516C6DB8C007C80F5 /* MainStoryboard.storyboard */,
+				DDA47F9016C6EBD8007C80F5 /* PopoverViewController.h */,
+				DDA47F9116C6EBD8007C80F5 /* PopoverViewController.m */,
 				DDA47F8816C6DB8C007C80F5 /* TBDViewController.h */,
 				DDA47F8916C6DB8C007C80F5 /* TBDViewController.m */,
 				DDA47F7416C6DB8C007C80F5 /* Supporting Files */,
@@ -177,6 +182,7 @@
 				DDA47F7A16C6DB8C007C80F5 /* main.m in Sources */,
 				DDA47F7E16C6DB8C007C80F5 /* TBDAppDelegate.m in Sources */,
 				DDA47F8A16C6DB8C007C80F5 /* TBDViewController.m in Sources */,
+				DDA47F9216C6EBD8007C80F5 /* PopoverViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +266,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ToolbarDraw/ToolbarDraw-Prefix.pch";
 				INFOPLIST_FILE = "ToolbarDraw/ToolbarDraw-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -271,6 +278,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ToolbarDraw/ToolbarDraw-Prefix.pch";
 				INFOPLIST_FILE = "ToolbarDraw/ToolbarDraw-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
