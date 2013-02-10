@@ -31,75 +31,13 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Frame X:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TRZ-Ho-LXU">
-                                <rect key="frame" x="340" y="325" width="82" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Main label width/2:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="k8W-kc-zUc">
-                                <rect key="frame" x="311" y="507" width="161" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Tool bar width:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3cE-29-Ba2">
-                                <rect key="frame" x="340" y="472" width="115" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Frame Y:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DfA-Hn-ZkV">
-                                <rect key="frame" x="340" y="364" width="82" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fTv-YQ-bIW">
-                                <rect key="frame" x="430" y="325" width="293" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xDS-Mm-o3c">
-                                <rect key="frame" x="430" y="364" width="293" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CnB-9U-gNA">
-                                <rect key="frame" x="475" y="472" width="293" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ybo-TO-oyd">
-                                <rect key="frame" x="475" y="507" width="293" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="frameXLabel" destination="TRZ-Ho-LXU" id="mPn-2v-VL2"/>
-                        <outlet property="frameYLabel" destination="DfA-Hn-ZkV" id="Hht-pK-036"/>
-                        <outlet property="labelToolBarWidth" destination="CnB-9U-gNA" id="QP2-ex-KRB"/>
                         <outlet property="labelToolbar" destination="0Kq-Un-LVR" id="87f-LE-nk0"/>
-                        <outlet property="labelmainWidth" destination="Ybo-TO-oyd" id="ZfC-Tu-0Hd"/>
                         <outlet property="mainTitle" destination="b7Z-uG-9nK" id="uuE-jA-ifk"/>
                         <outlet property="popoverButton" destination="yP7-6w-bJr" id="xVZ-e6-xL3"/>
-                        <outlet property="valueXLabel" destination="fTv-YQ-bIW" id="d2G-an-pjk"/>
-                        <outlet property="valueYLabel" destination="xDS-Mm-o3c" id="UHB-mW-fZt"/>
                         <segue destination="MjU-4Y-l4S" kind="popover" identifier="showCoolPopover" popoverAnchorBarButtonItem="yP7-6w-bJr" id="XCh-0j-4pt">
                             <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                         </segue>
@@ -107,6 +45,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="13" y="-179"/>
         </scene>
         <!--Popover View Controller-->
         <scene sceneID="jDW-gC-W97">
@@ -143,15 +82,9 @@
         <class className="TBDViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TBDViewController.h"/>
             <relationships>
-                <relationship kind="outlet" name="frameXLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="frameYLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelToolBarWidth" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="labelToolbar" candidateClass="UIToolbar"/>
-                <relationship kind="outlet" name="labelmainWidth" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="mainTitle" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="popoverButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="valueXLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="valueYLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
     </classes>

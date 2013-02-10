@@ -41,13 +41,7 @@ __weak UIPopoverController *myPopover;
     CGRect rect = self.mainTitle.frame;
     rect.origin = CGPointMake(((self.labelToolbar.frame.size.width/2.0)-(self.mainTitle.frame.size.width/2.0)), rect.origin.y);
     self.mainTitle.frame = rect;
-    
-//    self.valueXLabel.text = [NSString stringWithFormat: @"%.2f", self.mainTitle.frame.origin.x];
-//    self.valueYLabel.text = [NSString stringWithFormat: @"%.2f", self.mainTitle.bounds.origin.x];
-//    
-//    self.labelToolBarWidth.text = [NSString stringWithFormat: @"%.2f", self.labelToolbar.frame.size.width];
-//    self.labelmainWidth.text = [NSString stringWithFormat: @"%.2f",self.mainTitle.frame.size.width];   
-    
+ 
 }
 
 - (void)dismissController:(PopoverViewController *)controller{
@@ -68,7 +62,6 @@ __weak UIPopoverController *myPopover;
     if ([segue.identifier isEqualToString:@"showCoolPopover"]){
         myPopover = [(UIStoryboardPopoverSegue *)segue popoverController];
         myPopover.popoverContentSize = CGSizeMake(280,450);
-        myPopover.delegate = self;
         
         PopoverViewController *PVC = segue.destinationViewController;
         PVC.delegate = self;

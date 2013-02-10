@@ -11,27 +11,17 @@
 
 @interface TBDViewController : UIViewController <UIPopoverControllerDelegate,myPopControllerDelegate>
 
-
+//Apple provided delegate methods for PopoverController
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation;
 - (BOOL)popoverControllerShouldDismissPopover:(UIPopoverController *)popoverController;
 - (void)popoverControllerDidDismissPopover:(UIPopoverController *)popoverController;
 
+//custom delegate method to dismiss the PopoverController
 - (void)dismissController:(PopoverViewController *)controller;
 
+//emulate a navigationBar title on a toolBar
 @property (weak, nonatomic) IBOutlet UIToolbar *labelToolbar;
-
 @property (weak, nonatomic) IBOutlet UILabel *mainTitle;
-@property (weak, nonatomic) IBOutlet UILabel *frameXLabel;
-@property (weak, nonatomic) IBOutlet UILabel *frameYLabel;
-
-@property (weak, nonatomic) IBOutlet UILabel *valueXLabel;
-@property (weak, nonatomic) IBOutlet UILabel *valueYLabel;
-
-@property (weak, nonatomic) IBOutlet UILabel *labelToolBarWidth;
-
-@property (weak, nonatomic) IBOutlet UILabel *labelmainWidth;
-
-
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *popoverButton;
 
