@@ -7,10 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PopoverViewController.h"
 
-@interface TBDViewController : UIViewController
+@interface TBDViewController : UIViewController <UIPopoverControllerDelegate,myPopControllerDelegate>
+
 
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation;
+- (BOOL)popoverControllerShouldDismissPopover:(UIPopoverController *)popoverController;
+- (void)popoverControllerDidDismissPopover:(UIPopoverController *)popoverController;
+
+- (void)dismissController:(PopoverViewController *)controller;
 
 @property (weak, nonatomic) IBOutlet UIToolbar *labelToolbar;
 

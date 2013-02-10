@@ -7,7 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+@class PopoverViewController;
+
+@protocol myPopControllerDelegate<NSObject>
+
+- (void)dismissController:(PopoverViewController *)controller;
+
+@end
 
 @interface PopoverViewController : UIViewController
+{
+    
+}
+@property (nonatomic, weak) id <myPopControllerDelegate> delegate;
 
 @end

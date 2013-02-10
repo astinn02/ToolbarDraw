@@ -50,10 +50,28 @@ __weak UIPopoverController *myPopover;
     
 }
 
+- (void)dismissController:(PopoverViewController *)controller{
+    //custom delegate method 
+    [myPopover dismissPopoverAnimated:YES];
+}
+
+- (void)popoverControllerDidDismissPopover:(UIPopoverController *)popoverController{
+    
+}
+
+- (BOOL)popoverControllerShouldDismissPopover:(UIPopoverController *)popoverController{
+    //fires before DidDismissPopover
+    return YES;
+}
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if ([segue.identifier isEqualToString:@"showCoolPopover"]){
         myPopover = [(UIStoryboardPopoverSegue *)segue popoverController];
-        myPopover.popoverContentSize = CGSizeMake(280,450); 
+        myPopover.popoverContentSize = CGSizeMake(280,450);
+        myPopover.delegate = self;
+        
+        PopoverViewController *PVC = segue.destinationViewController;
+        PVC.delegate = self;
     }
     
 }

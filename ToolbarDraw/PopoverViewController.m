@@ -10,9 +10,18 @@
 
 @interface PopoverViewController ()
 
+
 @end
 
+
+
 @implementation PopoverViewController
+- (IBAction)pressedDoneButton:(id)sender {
+    //[self.delegate popoverControllerShouldDismissPopover:self];
+    [self.delegate dismissController:self];
+}
+
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
