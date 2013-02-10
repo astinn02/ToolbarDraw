@@ -16,11 +16,8 @@
 
 __weak UIPopoverController *myPopover;
 
-@synthesize valueXLabel;
 @synthesize labelToolbar;
 @synthesize mainTitle;
-@synthesize labelToolBarWidth;
-@synthesize labelmainWidth;
 
 - (IBAction)pressedPopoverButton:(UIBarButtonItem *)sender {
     if(myPopover) 
@@ -85,12 +82,6 @@ __weak UIPopoverController *myPopover;
 - (void)viewDidUnload {
     [self setLabelToolbar:nil];
     [self setMainTitle:nil];
-    [self setFrameXLabel:nil];
-    [self setFrameYLabel:nil];
-    [self setValueXLabel:nil];
-    [self setValueYLabel:nil];
-    [self setLabelToolBarWidth:nil];
-    [self setLabelmainWidth:nil];
     [self setPopoverButton:nil];
     [self setPopoverButton:nil];
     [super viewDidUnload];
