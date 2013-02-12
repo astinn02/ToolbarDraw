@@ -303,6 +303,7 @@
 				DDA47F8F16C6DB8C007C80F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

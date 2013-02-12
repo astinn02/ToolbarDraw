@@ -15,10 +15,30 @@
 
 @end
 
-@interface PopoverViewController : UIViewController
+@interface PopoverViewController : UIViewController<UIPickerViewDataSource,UIPickerViewDelegate>
 {
     
 }
+
+
+@property (weak, nonatomic) IBOutlet UIPickerView *thePickerView;
+@property (weak, nonatomic) IBOutlet UITextField *selectedMER;
+@property (weak, nonatomic) IBOutlet UITextField *selectedFiscalYear;
+
+//property array for one column UIPickerView Example
+@property (strong, nonatomic) NSArray *oneColumnList;
+
+//property array for a two column UIpickerCiew Example
+@property (strong, nonatomic) NSArray *secondColumnList;
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component;
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView;
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
+
+
+
+
 @property (nonatomic, weak) id <myPopControllerDelegate> delegate;
 
 @end
