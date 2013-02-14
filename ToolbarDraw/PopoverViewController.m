@@ -25,10 +25,10 @@
 
 - (void) awakeFromNib{
     //One column array example
-    self.oneColumnList=[[NSArray alloc] initWithObjects:@"MCTSP", @"STSP",@"SRP",@"CTC", nil];
+    self.secondColumnList=[[NSArray alloc] initWithObjects:@"MCTSP", @"STSP",@"SRP",@"CTC", nil];
     
     //Two column array example
-    self.secondColumnList=[[NSArray alloc] initWithObjects:@"2010",@"2011",@"2012",@"2013",@"2014",@"2015",@"2016",@"2017", nil];
+    self.oneColumnList=[[NSArray alloc] initWithObjects:@"2010",@"2011",@"2012",@"2013",@"2014",@"2015",@"2016",@"2017", nil];
     
 }
 //set text after making a picker selection

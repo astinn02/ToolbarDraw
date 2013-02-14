@@ -58,10 +58,12 @@ __weak UIPopoverController *myPopover;
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if ([segue.identifier isEqualToString:@"showCoolPopover"]){
         myPopover = [(UIStoryboardPopoverSegue *)segue popoverController];
-        myPopover.popoverContentSize = CGSizeMake(280,450);
+        myPopover.popoverContentSize = CGSizeMake(320,600);
         
-        PopoverViewController *PVC = segue.destinationViewController;
+        UITabBarController *TBC = segue.destinationViewController;
+        PopoverViewController *PVC =[[TBC viewControllers] objectAtIndex:1];
         PVC.delegate = self;
+        
     }
     
 }

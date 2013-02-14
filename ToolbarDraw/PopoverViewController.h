@@ -20,7 +20,7 @@
     
 }
 
-
+//having a pickerview means having to set two delegates: one for the pickerView and one for the dataSource
 @property (weak, nonatomic) IBOutlet UIPickerView *thePickerView;
 @property (weak, nonatomic) IBOutlet UITextField *selectedMER;
 @property (weak, nonatomic) IBOutlet UITextField *selectedFiscalYear;

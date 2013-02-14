@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD4E4B1616CB10820019424F /* TTVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4E4B1516CB10820019424F /* TTVViewController.m */; };
+		DD4E4B1816CC06CF0019424F /* ArcGIS.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DD4E4B1716CC06CF0019424F /* ArcGIS.bundle */; };
 		DDA47F6E16C6DB8C007C80F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA47F6D16C6DB8C007C80F5 /* UIKit.framework */; };
 		DDA47F7016C6DB8C007C80F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA47F6F16C6DB8C007C80F5 /* Foundation.framework */; };
 		DDA47F7216C6DB8C007C80F5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA47F7116C6DB8C007C80F5 /* CoreGraphics.framework */; };
@@ -22,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD4E4B1416CB10820019424F /* TTVViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTVViewController.h; sourceTree = "<group>"; };
+		DD4E4B1516CB10820019424F /* TTVViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTVViewController.m; sourceTree = "<group>"; };
+		DD4E4B1716CC06CF0019424F /* ArcGIS.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ArcGIS.bundle; sourceTree = "<group>"; };
 		DDA47F6916C6DB8C007C80F5 /* ToolbarDraw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToolbarDraw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDA47F6D16C6DB8C007C80F5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DDA47F6F16C6DB8C007C80F5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -76,6 +81,7 @@
 		DDA47F6C16C6DB8C007C80F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DD4E4B1716CC06CF0019424F /* ArcGIS.bundle */,
 				DDA47F6D16C6DB8C007C80F5 /* UIKit.framework */,
 				DDA47F6F16C6DB8C007C80F5 /* Foundation.framework */,
 				DDA47F7116C6DB8C007C80F5 /* CoreGraphics.framework */,
@@ -93,6 +99,8 @@
 				DDA47F9116C6EBD8007C80F5 /* PopoverViewController.m */,
 				DDA47F8816C6DB8C007C80F5 /* TBDViewController.h */,
 				DDA47F8916C6DB8C007C80F5 /* TBDViewController.m */,
+				DD4E4B1416CB10820019424F /* TTVViewController.h */,
+				DD4E4B1516CB10820019424F /* TTVViewController.m */,
 				DDA47F7416C6DB8C007C80F5 /* Supporting Files */,
 			);
 			path = ToolbarDraw;
@@ -164,6 +172,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD4E4B1816CC06CF0019424F /* ArcGIS.bundle in Resources */,
 				DDA47F7816C6DB8C007C80F5 /* InfoPlist.strings in Resources */,
 				DDA47F8016C6DB8C007C80F5 /* Default.png in Resources */,
 				DDA47F8216C6DB8C007C80F5 /* Default@2x.png in Resources */,
@@ -183,6 +192,7 @@
 				DDA47F7E16C6DB8C007C80F5 /* TBDAppDelegate.m in Sources */,
 				DDA47F8A16C6DB8C007C80F5 /* TBDViewController.m in Sources */,
 				DDA47F9216C6EBD8007C80F5 /* PopoverViewController.m in Sources */,
+				DD4E4B1616CB10820019424F /* TTVViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
