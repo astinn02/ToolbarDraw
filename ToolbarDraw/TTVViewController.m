@@ -16,6 +16,11 @@
 
 @implementation TTVViewController
 
+- (IBAction)pressedDoneButton:(id)sender {
+    //[self.delegate dismissController:self];
+    [self.delegate dismissController];
+}
+
 //RootViewController.m
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
@@ -23,14 +28,12 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithFrame:CGRectZero
-                                      reuseIdentifier:CellIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
     }
     
     // Set up the cell...
     NSString *cellValue = [listOfItems objectAtIndex:indexPath.row];
-    cell.text = cellValue;
-    
+    cell.textLabel.text = cellValue;
     return cell;
 }
 
@@ -53,8 +56,7 @@
     
     //Set the title
     //self.toolBar.topItem.title = @"Countries";
-    self.tableView.dataSource = self;
-    
+    self.tableView.dataSource = (id)self;
     
 }
 

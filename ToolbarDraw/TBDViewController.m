@@ -41,7 +41,8 @@ __weak UIPopoverController *myPopover;
  
 }
 
-- (void)dismissController:(PopoverViewController *)controller{
+- (void)dismissController//:(PopoverViewController *)controller
+{
     //custom delegate method 
     [myPopover dismissPopoverAnimated:YES];
 }
@@ -61,6 +62,8 @@ __weak UIPopoverController *myPopover;
         myPopover.popoverContentSize = CGSizeMake(320,600);
         
         UITabBarController *TBC = segue.destinationViewController;
+        TTVViewController *TTVC = [[TBC viewControllers] objectAtIndex:0];
+        TTVC.delegate = self;
         PopoverViewController *PVC =[[TBC viewControllers] objectAtIndex:1];
         PVC.delegate = self;
         

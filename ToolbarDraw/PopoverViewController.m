@@ -107,8 +107,8 @@ numberOfRowsInComponent:(NSInteger)component {
 }
 
 - (IBAction)pressedDoneButton:(id)sender {
-    //[self.delegate popoverControllerShouldDismissPopover:self];
-    [self.delegate dismissController:self];
+    //[self.delegate dismissController:self];
+    [self.delegate dismissController];
 }
 
 

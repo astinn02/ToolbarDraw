@@ -11,7 +11,8 @@
 
 @protocol myPopControllerDelegate<NSObject>
 
-- (void)dismissController:(PopoverViewController *)controller;
+//- (void)dismissController:(PopoverViewController *)controller;
+- (void)dismissController;
 
 @end
 
